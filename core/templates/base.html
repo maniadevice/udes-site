@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% block head %}
+    <title>UDES - {% block title %}{% endblock %}</title>
+    <!-- CSS tags -->
+    {#
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/base.css' )}}" /> #}
+    {% assets filters="cssmin", output="gen/packed.css",
+    "css/styles.css",
+    "css/base.css"
+    %}
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}" />
+    {% endassets %}
+
+    <!-- Script tags -->
+    {% assets filters="jsmin", output="gen/packed.js",
+    "node_modules/jquery/dist/jquery.min.js"
+    %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+
+    {{ JSGlue.include()}}
+
+    {% endblock %}
+</head>
+
+<body>
+
+    {% block header %}
+    <nav class="navbar has-shadow is-spaced" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="{{ url_for( 'static', filename='images/udes-text-icon.png' )}}" style="max-height: 2.8rem;">
+            </a>
+
+
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Home
+                </a>
+
+                <a class="navbar-item">
+                    History
+                </a>
+                <a class="navbar-item">
+                    Project Aims
+                </a>
+                <a class="navbar-item">
+                    Contact Us
+                </a>
+
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Donate</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    {% endblock %}
+
+    {% block content %}{% endblock %}
+
+    {% block footer %}
+    <footer></footer>
+    {% endblock %}
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{# The blocks written here will replace the blocks
+in base.html. if super() is called, the block from
+base.html will be inserted first and then
+the new block will be replaced #}
+{% block title %} Home {% endblock title %}
+
+{% block head %}
+{{ super() }}
+{% endblock head %}
+
+{# body begins #}
+{% block content %}
+
+<main>
+
+    <div id="image-container" style="overflow: hidden">
+        <img src="{{ url_for( 'static', filename='images/home-bg.jpg' )}}" class="home-background" />
+    </div>
+
+    <div id="content-container" style="position: absolute; top: 10rem;">
+        <div class="columns">
+            <div class="column"></div>
+        </div>
+        <div class="columns">
+            <div class="column"></div>
+        </div>
+        <div class="columns">
+            <div class="column"></div>
+        </div>
+        <div class="columns">
+            <div class="column is-three-fifths is-offset-one-fifth" style="border: 3px white solid;">
+                <p style="color: white;font-size: 4rem;text-align: center;">
+                    Union Dar-assalam Education et la Solidarite
+                </p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column"></div>
+        </div>
+        <div class="columns">
+            <div class="column is-8 is-offset-2">
+                <p style="color: white;font-size: 1.5rem;text-align: center;">
+                    UDES is a charity registered in Cameroon
+                    and United Kingdom working to help refugees fleeing persecution in Central African Republic.</p>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <p>UDES Portal</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+{% endblock content %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}

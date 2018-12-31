@@ -1,0 +1,8 @@
+Pipfile.lock
+.python-version
+.vscode/
+assets/
+core/static/node_modules/
+core/static/gen/
+core/static/.webassets-cache/
+core/static/css/styles.css

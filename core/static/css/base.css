@@ -1,0 +1,15 @@
+nav {
+    padding-top: 1rem; 
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.home-background {
+    height: 44rem;
+    filter: grayscale(85%) blur(3.5px) brightness(0.7);
+    -webkit-filter: grayscale(85%) blur(3.5px) brightness(0.7);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}
