@@ -4,4 +4,4 @@ export FLASK_APP=run.py
 cd core/static
 yarn run css-build
 cd ../..
-flask run
+flask run --host=0.0.0.0

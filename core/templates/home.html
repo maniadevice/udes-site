@@ -14,67 +14,80 @@ the new block will be replaced #}
 
 <main>
 
-    <div id="image-container" style="overflow: hidden">
-        <img src="{{ url_for( 'static', filename='images/home-bg.jpg' )}}" class="home-background" />
+    <div id="intro-screen">
+        <div id="image-container" style="overflow: hidden">
+            <img src="{{ url_for( 'static', filename='images/home-bg.jpg' )}}" class="home-background" />
+        </div>
+
+        <div id="content-container" style="position: absolute; top: 10rem;">
+            <div class="columns">
+                <div class="column"></div>
+            </div>
+            <div class="columns">
+                <div class="column"></div>
+            </div>
+            <div class="columns">
+                <div class="column"></div>
+            </div>
+            <div class="columns">
+                <div class="column is-three-fifths is-offset-one-fifth" style="border: 3px white solid;">
+                    <p style="color: white;font-size: 4rem;text-align: center;">
+                        Union Dar-assalam Education et la Solidarite
+                    </p>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column"></div>
+            </div>
+
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                    <p style="color: white;font-size: 1.5rem;text-align: center;">
+                        UDES is a charity registered in Cameroon
+                        and United Kingdom working to help refugees fleeing persecution in Central African Republic.</p>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div id="content-container" style="position: absolute; top: 10rem;">
+    <div id="map-screen" style="padding-left: 1rem;">
         <div class="columns">
             <div class="column"></div>
         </div>
         <div class="columns">
-            <div class="column"></div>
-        </div>
-        <div class="columns">
-            <div class="column"></div>
-        </div>
-        <div class="columns">
-            <div class="column is-three-fifths is-offset-one-fifth" style="border: 3px white solid;">
-                <p style="color: white;font-size: 4rem;text-align: center;">
-                    Union Dar-assalam Education et la Solidarite
-                </p>
+            <div class="column is-6" style="background-color: #209cee; color: #fff;">
+                <h2 class="title is-2" style="color: #fff;">Borgop Refugee Camp</h2>
+                <div class="content is-medium">
+                    <p>
+                        The Borgop village houses one of the three UN-run camps for the refugees from Central African
+                        Republic. It accomodates nearly 14,000 people including women, elderly men and children, many
+                        of
+                        whom are orphans. The village is located at a distance of about 35 miles from the town of
+                        Meiganga (shown in the
+                        map).
+                    </p>
+                    <br />
+                    <p>Refugees live in poor conditions and are in dire need of support in terms of food, clothing,
+                        education and potentially sustainable economic means.</p>
+                    <br />
+                    <p>To learn more about the history and what we are doing to help, click here.</p>
+                </div>
             </div>
-        </div>
-        <div class="columns">
-            <div class="column"></div>
-        </div>
-        <div class="columns">
-            <div class="column is-8 is-offset-2">
-                <p style="color: white;font-size: 1.5rem;text-align: center;">
-                    UDES is a charity registered in Cameroon
-                    and United Kingdom working to help refugees fleeing persecution in Central African Republic.</p>
-            </div>
-        </div>
-
-        <div class="columns" style="margin-top: 16rem; padding-left: 2rem;">
             <div class="column is-6">
                 <!--Map embed-->
                 <div class="mapouter">
-                    <div class="gmap_canvas"><iframe width="550" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=meiganga%20cameroon&t=&z=5&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net">rockettheme</a></div>
-                    <style>
-                        .mapouter {
-                            text-align: right;
-                            height: 500px;
-                            width: 550px;
-                        }
-
-                        .gmap_canvas {
-                            overflow: hidden;
-                            background: none !important;
-                            height: 500px;
-                            width: 550px;
-                        }
-                    </style>
+                    <div class="gmap_canvas">
+                        <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=meiganga%20cameroon&t=&z=5&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe>
+                    </div>
                 </div>
                 <!--Map embed close-->
             </div>
-            <div class="column is-6">
-                <p>Borgop Refugee Camp</p>
-                <p>Borgop Refugee Camp</p>
-            </div>
+
         </div>
     </div>
+
+
 </main>
 
 
