@@ -5,3 +5,13 @@ main_app = Blueprint('main_app', __name__, template_folder='templates')
 @main_app.route('/')
 def home():
     return render_template('home.html')
+
+
+@main_app.route('/history')
+def history():
+    return render_template('history.html')
+
+
+@main_app.route('/donate')
+def donate():
+    return render_template('donate.html')

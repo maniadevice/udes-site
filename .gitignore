@@ -6,3 +6,4 @@ core/static/node_modules/
 core/static/gen/
 core/static/.webassets-cache/
 core/static/css/styles.css
+core/static/package-lock.json

@@ -4,21 +4,28 @@
 <head>
         <meta charset="UTF-8">
         <meta name='viewport' content="width=device-width, initial-scale=1">
+        <link rel="icon" href="{{ url_for( 'static', filename='images/favicon.ico' )}}" type="image/x-icon" />
+
     {% block head %}
     <title>UDES - {% block title %}{% endblock %}</title>
     <!-- CSS tags -->
     {#
-    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/base.css' )}}" /> #}
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/base.css' )}}" /> 
+    #}
     {% assets filters="cssmin", output="gen/packed.css",
     "css/styles.css",
-    "css/base.css"
+    "css/base.css",
+    "node_modules/photoswipe/dist/photoswipe.css",
+    "node_modules/photoswipe/dist/default-skin/default-skin.css"
     %}
     <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}" />
     {% endassets %}
 
     <!-- Script tags -->
     {% assets filters="jsmin", output="gen/packed.js",
-    "node_modules/jquery/dist/jquery.min.js"
+    "node_modules/jquery/dist/jquery.min.js",
+    "node_modules/photoswipe/dist/photoswipe.min.js",
+    "node_modules/photoswipe/dist/photoswipe-ui-default.min.js"
     %}
     <script type="text/javascript" src="{{ ASSET_URL }}"></script>
     {% endassets %}
@@ -47,11 +54,11 @@
         </div>
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item">
+                <a class="navbar-item" href="{{url_for('main_app.home')}}">
                     Home
                 </a>
 
-                <a class="navbar-item">
+                <a class="navbar-item" href="{{url_for('main_app.history')}}">
                     History
                 </a>
                 <a class="navbar-item">
