@@ -15,3 +15,8 @@ def history():
 @main_app.route('/donate')
 def donate():
     return render_template('donate.html')
+
+
+@main_app.route('/project-aims')
+def aims():
+    return render_template('project-aims.html')
