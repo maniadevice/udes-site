@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %} Donate {% endblock title %}
+
+{% block head %}
+{{ super() }}
+{% endblock head %}
+
+{# body begins #}
+{% block content %}
+
+<main>
+    <div style="padding-left: 3rem;">
+        <div class="columns">
+            <div class="column is-12">
+                <div class="content is-medium">
+                    <p class="title is-3 is-spaced">Donate</p>
+                    <p>Dear visitor, we are working on having a payments system in place.
+                        For now, you can pledge your donation information here and we will be in touch with you soon.
+                        If you have any questions, you can find our contact information from <a href="{{url_for('main_app.contact')}}">Contact
+                            Us</a> page.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-6 is-offset-3">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSemHYouRw9k1s7f3WAHcWY95W02DEHXKQtVxYX0blj_IciAGQ/viewform?embedded=true"
+                    width="640" height="1347" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+{% endblock content %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}

@@ -20,3 +20,7 @@ def donate():
 @main_app.route('/project-aims')
 def aims():
     return render_template('project-aims.html')
+
+@main_app.route('/contact')
+def contact():
+    return render_template('project-aims.html')
