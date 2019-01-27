@@ -1,7 +1,12 @@
 # Website for UDES
 
 ### Tech
-* TODO
+* Flask
+* Bulma
+* Unite Gallery
+* Let's encrypt
+* Gunicorn
+* Pipenv & Yarn
 
 ### Production Server
 * Build Python environment and install dependencies as explained [here](https://bitbucket.org/mania_dev/flask-boilerplate)
@@ -14,6 +19,8 @@
 * Open terminal and run
 ```sh run.sh```
 * Hit the URL
+* To deploy using gunicorn, run the following
+```gunicorn -w 3 -b 0.0.0.0:4000 run:app```
 
 ### Debugging
 * Check if the following were created
