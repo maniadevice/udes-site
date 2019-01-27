@@ -99,11 +99,11 @@
             </div>
             <div class="column is-3">
                 <div class="content">
-                    <p><span style="font-weight: bold;">Contact Us</span><br/>
-                    Email: uniondarassalam@gmail.com<br/>
-                    UK Phone: +44 7541 992 350<br/>
-                    Cameroon Phone: +237 6945 13178
-                </p>
+                    <p><span style="font-weight: bold;">Contact Us</span><br />
+                        Email: uniondarassalam@gmail.com<br />
+                        UK Phone: +44 7541 992 350<br />
+                        Cameroon Phone: +237 6945 13178
+                    </p>
                 </div>
             </div>
         </div>
@@ -111,7 +111,8 @@
 
             <p>
                 <span>© Copyright 2018-Present</span>
-                <span style="float: right;"><a style="color: #6f5e48;" href="{{url_for('main_app.accreditation')}}">Disclosure & Accreditation</a></span>
+                <span style="float: right;"><a style="color: #6f5e48;" href="{{url_for('main_app.accreditation')}}">Disclosure
+                        & Accreditation</a></span>
             </p>
         </div>
 
@@ -119,5 +120,19 @@
     {% endblock %}
 
 </body>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        // Check for click events on the navbar burger icon
+        $(".navbar-burger").click(function () {
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+
+        });
+    });
+</script>
 
 </html>
