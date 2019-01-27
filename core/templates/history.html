@@ -41,46 +41,6 @@
                         in Leicester, UK. Together, they managed to channel the donations
                         into crucial support, the refugees were in need of.
                     </p>
-                    <div id="gallery" style="display:none; margin: 0px auto;">
-
-                        <img alt="" src="{{ url_for( 'static', filename='images/home-bg.jpg' )}}" data-image="{{ url_for( 'static', filename='images/home-bg.jpg' )}}"
-                            data-description="">
-                        <img alt="" src="{{ url_for( 'static', filename='images/media/1.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/1.jpg' )}}"
-                            data-description="">
-                        <img alt="" src="{{ url_for( 'static', filename='images/media/2.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/2.jpg' )}}"
-                            data-description="">
-                        <img alt="" src="{{ url_for( 'static', filename='images/media/3.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/3.jpg' )}}"
-                            data-description="">
-                        <img alt="" src="{{ url_for( 'static', filename='images/media/4.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/4.jpg' )}}"
-                            data-description="">
-                        <img alt="" src="{{ url_for( 'static', filename='images/media/5.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/5.jpg' )}}"
-                            data-description="">
-                        <img alt="" src="{{ url_for( 'static', filename='images/media/6.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/6.jpg' )}}"
-                            data-description="">
-                        <img alt="" src="{{ url_for( 'static', filename='images/media/7.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/7.jpg' )}}"
-                            data-description="">
-                        <img alt="" src="{{ url_for( 'static', filename='images/media/8.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/8.jpg' )}}"
-                            data-description="">
-                        <img alt="" src="{{ url_for( 'static', filename='images/media/9.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/9.jpg' )}}"
-                            data-description="">
-                        <img alt="" src="{{ url_for( 'static', filename='images/media/10.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/10.jpg' )}}"
-                            data-description="">
-                        <img alt="" src="{{ url_for( 'static', filename='images/media/11.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/11.jpg' )}}"
-                            data-description="">
-                        <img alt="" src="{{ url_for( 'static', filename='images/media/15.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/15.jpg' )}}"
-                            data-description="">
-                        <img alt="Food Distribution" data-type="youtube" data-videoid="IM_xjVtaA6c"
-                            data-description="Food Distribution">
-                        <img alt="" src="{{ url_for( 'static', filename='images/media/14.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/14.jpg' )}}"
-                            data-description="">
-                        <img alt="" src="{{ url_for( 'static', filename='images/media/13.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/13.jpg' )}}"
-                            data-description="">
-
-
-
-
-                    </div>
-                    <br />
                     <p>
                         Every year we provide basic medication, meat, rice, oil and other necessary ingredients during
                         our annual visits in the month of Ramadan. We have also provided clothing for children and set
@@ -89,6 +49,23 @@
                         widows and old men for the festival of Eid – but due to lack of funds, we have managed to
                         provide this only for a few of them.
                     </p>
+                    <div id="gallery" style="display:none; margin: 0px auto;">
+
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/h1.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/h1.jpg' )}}"
+                            data-description="Zakaah Distribution - Dec 2018">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/h2.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/h2.jpg' )}}"
+                            data-description="Zakaah Distribution - Dec 2018">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/h3.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/h3.jpg' )}}"
+                            data-description="Zakaah Distribution - Dec 2018">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/h4.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/h4.jpg' )}}"
+                            data-description="Zakaah Distribution - Dec 2018">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/h5.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/h5.jpg' )}}"
+                            data-description="Zakaah Distribution - Dec 2018">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/h6.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/h6.jpg' )}}"
+                            data-description="Zakaah Distribution - Dec 2018">
+                        <img alt="Food Distribution" data-type="youtube" data-videoid="9UEX049lr_g" data-description="Zakaah Distribution - Dec 2018">
+                    </div>
+                    <br />
                     <p class="title is-5">Origin of UDES</p>
                     <p>
                         In 2018, Hamid Aboubakar decided to register the charity UDES in Cameroon, to be able to
@@ -119,8 +96,8 @@
     $(document).ready(function () {
         $("#gallery").unitegallery({
             gallery_autoplay: true,
-            gallery_play_interval: 3000,
-            theme_enable_text_panel: false,
+            gallery_play_interval: 5000,
+            theme_enable_text_panel: true,
             slider_scale_mode: 'down'
         });
     });

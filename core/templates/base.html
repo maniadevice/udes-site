@@ -2,15 +2,15 @@
 <html>
 
 <head>
-        <meta charset="UTF-8">
-        <meta name='viewport' content="width=device-width, initial-scale=1">
-        <link rel="icon" href="{{ url_for( 'static', filename='images/favicon.ico' )}}" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name='viewport' content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ url_for( 'static', filename='images/favicon.ico' )}}" type="image/x-icon" />
 
     {% block head %}
     <title>UDES - {% block title %}{% endblock %}</title>
     <!-- CSS tags -->
     {#
-    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/base.css' )}}" /> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/base.css' )}}" />
     #}
     {% assets filters="cssmin", output="gen/packed.css",
     "css/styles.css",
@@ -88,13 +88,31 @@
     {% block content %}{% endblock %}
 
     {% block footer %}
-    <footer class="footer" style="margin-top: 1rem;">
-        <div class="content">
-          <p style="color: #deb887;">
-            UDES is a registered charity in the UK and Cameroon.
-          </p>
+    <footer class="footer" style="margin-top: 1rem; color: #deb887;">
+        <div class="columns">
+            <div class="column is-9">
+                <div class="content">
+                    <p>
+                        UDES is a charity in Cameroon and in the process of being registered in the UK.
+                    </p>
+                </div>
+            </div>
+            <div class="column is-3">
+                <div class="content">
+                    <p>Contact Us</p>
+                    <p>Email: uniondarassalam@gmail.com</p>
+                    <p>Phone: +44 7541 992350</p>
+                </div>
+            </div>
         </div>
-      </footer>
+        <div class="content">
+
+            <p>
+                © Copyright 2018-Present
+            </p>
+        </div>
+
+    </footer>
     {% endblock %}
 
 </body>

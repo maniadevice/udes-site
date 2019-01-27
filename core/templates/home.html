@@ -30,7 +30,7 @@ the new block will be replaced #}
                 <div class="column"></div>
             </div>
             <div class="columns">
-                <div class="column is-three-fifths is-offset-one-fifth" style="border: 3px white solid;">
+                <div class="column is-7 is-offset-3" style="border: 3px white solid;">
                     <p style="color: white;font-size: 4rem;text-align: center;">
                         Union Dar-assalam Education et la Solidarite
                     </p>
@@ -41,10 +41,9 @@ the new block will be replaced #}
             </div>
 
             <div class="columns">
-                <div class="column is-8 is-offset-2">
+                <div class="column is-7 is-offset-3">
                     <p style="color: white;font-size: 1.5rem;text-align: center;">
-                        UDES is a charity registered in Cameroon
-                        and United Kingdom working to help refugees fleeing persecution in Central African Republic.</p>
+                        UDES is a charity working to help refugees fleeing persecution in Central African Republic.</p>
                 </div>
             </div>
         </div>
@@ -69,7 +68,9 @@ the new block will be replaced #}
                     <p>Refugees live in poor conditions and are in dire need of support in terms of food, clothing,
                         education and potentially sustainable economic means.</p>
                     <br />
-                    <p>To learn more about the history and what we are doing to help, <a style="color: #0f3a7d;text-decoration: underline;" href="{{url_for('main_app.history')}}">click here</a> or <a style="color: #0f3a7d; text-decoration: underline;" href="{{url_for('main_app.donate')}}">donate now</a>.</p>
+                    <p>To learn more about the history and what we are doing to help, <a style="color: #0f3a7d;text-decoration: underline;"
+                            href="{{url_for('main_app.history')}}">click here</a> or <a style="color: #0f3a7d; text-decoration: underline;"
+                            href="{{url_for('main_app.donate')}}">donate now</a>.</p>
                 </div>
             </div>
             <div class="column is-6">
@@ -182,6 +183,48 @@ the new block will be replaced #}
         <div class="columns">
             <div class="column"></div>
         </div>
+        <div class="columns">
+            <div class="column is-12">
+                <div id="gallery" style="display:none; margin: 0px auto;">
+
+                    <img alt="" src="{{ url_for( 'static', filename='images/home-bg.jpg' )}}" data-image="{{ url_for( 'static', filename='images/home-bg.jpg' )}}"
+                        data-description="">
+                    <img alt="" src="{{ url_for( 'static', filename='images/media/1.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/1.jpg' )}}"
+                        data-description="">
+                    <img alt="" src="{{ url_for( 'static', filename='images/media/2.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/2.jpg' )}}"
+                        data-description="">
+                    <img alt="" src="{{ url_for( 'static', filename='images/media/3.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/3.jpg' )}}"
+                        data-description="">
+                    <img alt="" src="{{ url_for( 'static', filename='images/media/4.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/4.jpg' )}}"
+                        data-description="">
+                    <img alt="" src="{{ url_for( 'static', filename='images/media/5.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/5.jpg' )}}"
+                        data-description="">
+                    <img alt="" src="{{ url_for( 'static', filename='images/media/6.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/6.jpg' )}}"
+                        data-description="">
+                    <img alt="" src="{{ url_for( 'static', filename='images/media/7.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/7.jpg' )}}"
+                        data-description="">
+                    <img alt="" src="{{ url_for( 'static', filename='images/media/8.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/8.jpg' )}}"
+                        data-description="">
+                    <img alt="" src="{{ url_for( 'static', filename='images/media/9.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/9.jpg' )}}"
+                        data-description="">
+                    <img alt="" src="{{ url_for( 'static', filename='images/media/10.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/10.jpg' )}}"
+                        data-description="">
+                    <img alt="" src="{{ url_for( 'static', filename='images/media/11.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/11.jpg' )}}"
+                        data-description="">
+                    <img alt="" src="{{ url_for( 'static', filename='images/media/15.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/15.jpg' )}}"
+                        data-description="">
+                    <img alt="Food Distribution" data-type="youtube" data-videoid="IM_xjVtaA6c" data-description="Food Distribution">
+                    <img alt="" src="{{ url_for( 'static', filename='images/media/14.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/14.jpg' )}}"
+                        data-description="">
+                    <img alt="" src="{{ url_for( 'static', filename='images/media/13.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/13.jpg' )}}"
+                        data-description="">
+
+
+
+
+                </div>
+            </div>
+        </div>
         <div class="columns notification is-primary">
 
             <!-- <div class="tile is-ancestor">
@@ -195,12 +238,17 @@ the new block will be replaced #}
             </div> -->
             <div class="column is-12">
                 <div class="content is-medium" style="font-weight:bold;">
-                        It was narrated that Abu Hurayrah (may Allaah be pleased with him) said: The Messenger of Allaah (peace and blessings of Allaah be upon him) said: “Whoever gives charity equal to a date from good (halal) earnings – for Allaah does not accept anything but that which is good – Allaah will take it in His right hand and tend it for the one who gave it as any one of you tends his foal, until it becomes like a mountain.”
-                        <br>
-                        Narrated by al-Bukhaari, 1344; Muslim, 1014.
+                    It was narrated that Abu Hurayrah (may Allaah be pleased with him) said: The Messenger of Allaah
+                    (peace and blessings of Allaah be upon him) said: “Whoever gives charity equal to a date from good
+                    (halal) earnings – for Allaah does not accept anything but that which is good – Allaah will take it
+                    in His right hand and tend it for the one who gave it as any one of you tends his foal, until it
+                    becomes like a mountain.”
+                    <br>
+                    Narrated by al-Bukhaari, 1344; Muslim, 1014.
                 </div>
                 <div class="content">
-                    We are very grateful to the excellent support provided by the charity <a target="_blank" href="https://www2.caravanofmercy.org/">Caravan of Mercy</a> (Leicester,
+                    We are very grateful to the excellent support provided by the charity <a target="_blank" href="https://www2.caravanofmercy.org/">Caravan
+                        of Mercy</a> (Leicester,
                     UK) and their generous donors. We have a long way to go in our efforts and we sincerely ask you to
                     support us with your sadaqah, zakah or general donations.
                 </div>
@@ -209,6 +257,21 @@ the new block will be replaced #}
     </div>
 
 </main>
+<script type="text/javascript">
+    // A $( document ).ready() block.
+
+    $(document).ready(function () {
+        $("#gallery").unitegallery({
+            gallery_autoplay: true,
+            gallery_play_interval: 5000,
+            theme_enable_text_panel: false,
+            slider_scale_mode: 'down',
+            gallery_width: 1100,
+            gallery_height: 610
+        });
+    });
+
+</script>
 
 
 {% endblock content %}
