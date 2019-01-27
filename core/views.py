@@ -21,3 +21,7 @@ def aims():
 @main_app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@main_app.route('/accreditation')
+def accreditation():
+    return render_template('accreditation.html')
