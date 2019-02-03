@@ -7,6 +7,7 @@ nav {
 
 .home-background {
     height: 44rem;
+    width: 100%;
     filter: grayscale(85%) blur(3.5px) brightness(0.7);
     -webkit-filter: grayscale(85%) blur(3.5px) brightness(0.7);
     transform: scale(1.2);
