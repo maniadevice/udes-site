@@ -22,6 +22,10 @@ def aims():
 def contact():
     return render_template('contact.html')
 
+@main_app.route('/ramadan-2019')
+def ramadan_2019():
+    return render_template('/ramadan-2019.html')
+
 @main_app.route('/accreditation')
 def accreditation():
     return render_template('accreditation.html')

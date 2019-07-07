@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block title %} Ramadan 2019 {% endblock title %}
+
+{% block head %}
+{{ super() }}
+{% endblock head %}
+
+{# body begins #}
+{% block content %}
+
+<main>
+    <div style="padding-left: 3rem;">
+        <div class="columns">
+            <div class="column is-12">
+                <div class="content is-medium">
+                    <p class="title is-3 is-spaced">Ramadan 2019</p>
+                    <p></p>
+In the latter part of Ramadan 2019, we took the opportunity to visit the Refugee Camp to provide them with essential support and assess the situation. By the grace of Allah, and thereafter with the help of our generous donors, we were able to reach those who were in desparate need amongst the entire population of the Refugee camp.
+Some of the things we were able to achieve, are listed below
+                    </p>
+                    <p>
+                        <ul>
+                            <li>We provided Food Parcels for 1400 people. We worked alongside UN to identify those people who had limited access to food in the past months, and prioritised them, accordingly.</li>
+                            <li>We equipped 21 people with means for sustainable occupation. These include sewing machines, bakery products and farming tools, seeds. We requested the people with the skills, to teach other members of the community - so that an environment of empowerment can be created.</li>
+                            <li>New clothes for 85 orphan children were purchased and handed over. This was specifically achieved by our 'Sponsor Eid clothes for the orphan' initiative, supported and sponsored by our generous donors.</li>
+                        </ul>
+                    </p>
+
+                    <div id="gallery" style="display:none; margin: 0px auto;">
+
+                            <img alt="Arriving at Borgop Camp" data-type="youtube" data-videoid="q0oEiE8PLtU" data-description="Arriving at Borgop Camp, Ramadan 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/19-1.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/19-1.jpg' )}}"
+                            data-description="Ramadan Visit - 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/19-2.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/19-2.jpg' )}}"
+                            data-description="Ramadan Visit - 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/19-3.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/19-3.jpg' )}}"
+                            data-description="Ramadan Visit - 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/19-4.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/19-4.jpg' )}}"
+                            data-description="Ramadan Visit - 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/19-5.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/19-5.jpg' )}}"
+                            data-description="Ramadan Visit - 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/19-6.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/19-6.jpg' )}}"
+                            data-description="Ramadan Visit - 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/19-7.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/19-7.jpg' )}}"
+                            data-description="Ramadan Visit - 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/19-8.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/19-8.jpg' )}}"
+                            data-description="Ramadan Visit - 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/19-9.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/19-9.jpg' )}}"
+                            data-description="Ramadan Visit - 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/19-10.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/19-10.jpg' )}}"
+                            data-description="Ramadan Visit - 2019">
+
+                            <img alt="Clothes Distribution" data-type="youtube" data-videoid="Y6dp7Di_nyQ" data-description="Clothes Distribution - 1">
+                            <img alt="Food Distribution" data-type="youtube" data-videoid="kiuaTi3VsWU" data-description="Food Distribution">
+                            <img alt="Clothes Distribution" data-type="youtube" data-videoid="iUylm7PjFqw" data-description="Clothes Distribution - 2">
+                            <img alt="Clothes Distribution" data-type="youtube" data-videoid="UVx2tisL32w" data-description="Clothes Distribution - 3">
+                    </div>
+                    <br />
+                    <p>We are extremely thankful for the supporters and the donors of UDES and Caravan of Mercy. This initiative cannot succeed without your support. We hope to reach out to more people and also help them help themselves by providing means of occupation around their skills. If you need any further information or would like to support us, please do not hesitate to <a href="{{url_for('main_app.contact')}}">contact us</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script type="text/javascript">
+    // A $( document ).ready() block.
+
+    $(document).ready(function () {
+        $("#gallery").unitegallery({
+            gallery_autoplay: true,
+            gallery_play_interval: 5000,
+            theme_enable_text_panel: true,
+            slider_scale_mode: 'down'
+        });
+    });
+
+</script>
+
+{% endblock content %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}
