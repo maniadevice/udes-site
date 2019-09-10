@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block title %} Ramadan 2019 {% endblock title %}
+
+{% block head %}
+{{ super() }}
+{% endblock head %}
+
+{# body begins #}
+{% block content %}
+
+<main>
+    <div style="padding-left: 3rem;">
+        <div class="columns">
+            <div class="column is-12">
+                <div class="content is-medium">
+                    <p class="title is-3 is-spaced">Eid ul Adha 2019</p>
+                    <p></p>
+                    <p>
+                        Alhamdulillah, thanks to the many generous individual and group donations, we were 
+                        able to perform the qurbani and deliver the meat to the refugees in the camp. In total, we slaughtered 15 cows, 9 sheep and a goat that were used to feed 1800 families. In addition, we provided hot meals to 450 orphan children. We also distributed 190 Quran mushaf for the refugees.
+                    </p>
+
+                    <div id="gallery" style="display:none; margin: 0px auto;">
+
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/bakrid2019/b19-1.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/bakrid2019/b19-1.jpg' )}}"
+                            data-description="Eid ul Adha 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/bakrid2019/b19-2.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/bakrid2019/b19-2.jpg' )}}"
+                            data-description="Eid ul Adha 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/bakrid2019/b19-3.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/bakrid2019/b19-3.jpg' )}}"
+                            data-description="Eid ul Adha 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/bakrid2019/b19-4.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/bakrid2019/b19-4.jpg' )}}"
+                            data-description="Eid ul Adha 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/bakrid2019/b19-5.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/bakrid2019/b19-5.jpg' )}}"
+                            data-description="Eid ul Adha 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/bakrid2019/b19-6.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/bakrid2019/b19-6.jpg' )}}"
+                            data-description="Eid ul Adha 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/bakrid2019/b19-7.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/bakrid2019/b19-7.jpg' )}}"
+                            data-description="Eid ul Adha 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/bakrid2019/b19-8.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/bakrid2019/b19-8.jpg' )}}"
+                            data-description="Eid ul Adha 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/bakrid2019/b19-9.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/bakrid2019/b19-9.jpg' )}}"
+                            data-description="Eid ul Adha 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/bakrid2019/b19-10.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/bakrid2019/b19-10.jpg' )}}"
+                            data-description="Eid ul Adha 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/bakrid2019/b19-11.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/bakrid2019/b19-11.jpg' )}}"
+                            data-description="Eid ul Adha 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/bakrid2019/b19-12.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/bakrid2019/b19-12.jpg' )}}"
+                            data-description="Eid ul Adha 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/bakrid2019/b19-13.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/bakrid2019/b19-13.jpg' )}}"
+                            data-description="Eid ul Adha 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/bakrid2019/b19-14.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/bakrid2019/b19-14.jpg' )}}"
+                            data-description="Eid ul Adha 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/bakrid2019/b19-15.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/bakrid2019/b19-15.jpg' )}}"
+                            data-description="Eid ul Adha 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/bakrid2019/b19-16.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/bakrid2019/b19-16.jpg' )}}"
+                            data-description="Eid ul Adha 2019">
+                            <img alt="" src="{{ url_for( 'static', filename='images/media/bakrid2019/b19-17.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/bakrid2019/b19-17.jpg' )}}"
+                            data-description="Eid ul Adha 2019">
+
+                            <img alt="Books Distribution" data-type="youtube" data-videoid="THLhUWxYuvc" data-description="Books Distribution">
+                            <img alt="Books Distribution" data-type="youtube" data-videoid="I5pPt4mnFUo" data-description="Books Distribution">
+                            <img alt="Meals for Orphans" data-type="youtube" data-videoid="80SuqtzNDoo" data-description="Eid ul Adha Meals">
+                            <img alt="Books Distribution" data-type="youtube" data-videoid="9Q8JSOaHQuA" data-description="Books Distribution">
+                            <img alt="Books Distribution" data-type="youtube" data-videoid="VF8iAvk5kb8" data-description="Books Distribution">
+                    </div>
+                    <br />
+                    <p>We are extremely thankful for the supporters and the donors of UDES. This initiative cannot succeed without your support. May Allah reward you abundantly. If you need any further information or would like to support us, please do not hesitate to <a href="{{url_for('main_app.contact')}}">contact us</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script type="text/javascript">
+    // A $( document ).ready() block.
+
+    $(document).ready(function () {
+        $("#gallery").unitegallery({
+            gallery_autoplay: true,
+            gallery_play_interval: 5000,
+            theme_enable_text_panel: true,
+            slider_scale_mode: 'down'
+        });
+    });
+
+</script>
+
+{% endblock content %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}

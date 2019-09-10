@@ -26,6 +26,10 @@ def contact():
 def ramadan_2019():
     return render_template('/ramadan-2019.html')
 
+@main_app.route('/bakrid-2019')
+def bakrid_2019():
+    return render_template('/bakrid-2019.html')
+
 @main_app.route('/accreditation')
 def accreditation():
     return render_template('accreditation.html')
