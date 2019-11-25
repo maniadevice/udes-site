@@ -30,6 +30,10 @@ def ramadan_2019():
 def bakrid_2019():
     return render_template('/bakrid-2019.html')
 
+@main_app.route('/water-pump-2019')
+def water_pump_2019():
+    return render_template('/water-pump-2019.html')
+
 @main_app.route('/accreditation')
 def accreditation():
     return render_template('accreditation.html')

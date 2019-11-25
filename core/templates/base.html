@@ -62,14 +62,27 @@
                     History
                 </a>
                 <a class="navbar-item" href="{{url_for('main_app.aims')}}">
-                    Project Aims
+                    Charity Aims
                 </a>
-                <a class="navbar-item" href="{{url_for('main_app.ramadan_2019')}}">
-                        Ramadan 2019
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                      Projects
                     </a>
-                    <a class="navbar-item" href="{{url_for('main_app.bakrid_2019')}}">
-                        Bakrid 2019
-                    </a>                
+            
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="{{url_for('main_app.ramadan_2019')}}">
+                            Ramadan 2019
+                        </a>
+                        <a class="navbar-item" href="{{url_for('main_app.bakrid_2019')}}">
+                            Bakrid 2019
+                        </a>
+                        <a class="navbar-item" href="{{url_for('main_app.water_pump_2019')}}">
+                            Water Pump
+                        </a>
+                    </div>
+                </div>
+                
                 <a class="navbar-item" href="{{url_for('main_app.contact')}}">
                     Contact Us
                 </a>
