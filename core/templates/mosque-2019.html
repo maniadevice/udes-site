@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %} Masjid Project 2019 {% endblock title %}
+
+{% block head %}
+{{ super() }}
+{% endblock head %}
+
+{# body begins #}
+{% block content %}
+
+<main>
+    <div style="padding-left: 3rem;">
+        <div class="columns">
+            <div class="column is-12">
+                <div class="content is-medium">
+                    <p class="title is-3 is-spaced">Construction of Masjid</p>
+                    <p class="title is-6 is-spaced">December 2019</p>
+                    <p>
+                        By the grace of Allah, we have managed to complete the construction of a Masjid within the Borgop Refugee Camp. The masjid would accommodate for 900-1000 musallis, and has costed £6000 for completing the project. Alhamdulillah, the mosque has become one of the largest for the surrounding villages. We would like to thank all our donors, specifically Mr. Mahdi, Mr. Raz Usman and Dr. Abubakr Wobi for providing support to fund these invaluable projects.
+                    </p>
+
+                    <div id="gallery" style="display:none; margin: 0px auto;">
+
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/water-pump/1.jpeg' )}}" data-image="{{ url_for( 'static', filename='images/media/water-pump/1.jpeg' )}}"
+                        data-description="Water Pump Project - Godola, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/water-pump/2.jpeg' )}}" data-image="{{ url_for( 'static', filename='images/media/water-pump/2.jpeg' )}}"
+                        data-description="Water Pump Project - Godola, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/water-pump/3.jpeg' )}}" data-image="{{ url_for( 'static', filename='images/media/water-pump/3.jpeg' )}}"
+                        data-description="Water Pump Project - Godola, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/water-pump/4.jpeg' )}}" data-image="{{ url_for( 'static', filename='images/media/water-pump/4.jpeg' )}}"
+                        data-description="Water Pump Project - Godola, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/water-pump/5.jpeg' )}}" data-image="{{ url_for( 'static', filename='images/media/water-pump/5.jpeg' )}}"
+                        data-description="Water Pump Project - Godola, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/water-pump/6.jpeg' )}}" data-image="{{ url_for( 'static', filename='images/media/water-pump/6.jpeg' )}}"
+                        data-description="Water Pump Project - Godola, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/water-pump/7.jpeg' )}}" data-image="{{ url_for( 'static', filename='images/media/water-pump/7.jpeg' )}}"
+                        data-description="Water Pump Project - Godola, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/water-pump/8.jpeg' )}}" data-image="{{ url_for( 'static', filename='images/media/water-pump/8.jpeg' )}}"
+                        data-description="Water Pump Project - Godola, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/water-pump/9.jpeg' )}}" data-image="{{ url_for( 'static', filename='images/media/water-pump/9.jpeg' )}}"
+                        data-description="Water Pump Project - Godola, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/water-pump/10.jpeg' )}}" data-image="{{ url_for( 'static', filename='images/media/water-pump/10.jpeg' )}}"
+                        data-description="Water Pump Project - Godola, Cameroon">
+
+                            <img alt="Water Pump Project - Godola, Cameroon" data-type="youtube" data-videoid="l9LQGv1UOWY" data-description="Water Pump Project - Godola, Cameroon">
+                    </div>
+                    <br />
+                    <p>We are extremely thankful for the supporters and the donors of UDES. This initiative cannot succeed without your support. May Allah reward you abundantly. If you need any further information or would like to support us, please do not hesitate to <a href="{{url_for('main_app.contact')}}">contact us</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script type="text/javascript">
+    // A $( document ).ready() block.
+
+    $(document).ready(function () {
+        $("#gallery").unitegallery({
+            gallery_autoplay: true,
+            gallery_play_interval: 5000,
+            theme_enable_text_panel: true,
+            slider_scale_mode: 'down'
+        });
+    });
+
+</script>
+
+{% endblock content %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}
