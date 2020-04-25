@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %} Ramadan Appeal 2020 {% endblock title %}
+
+{% block head %}
+{{ super() }}
+{% endblock head %}
+
+{# body begins #}
+{% block content %}
+
+<main>
+    <div style="padding-left: 3rem;">
+        <div class="columns">
+            <div class="column is-12">
+                <div class="content is-medium">
+                    <p class="title is-3 is-spaced">Ramadan Appeal 2020</p>
+                    <p></p>
+                    <p>Assalamu Alaikum, dear brothers and sisters. We hope you've had a good start to Ramadan and find this in best of health. We pray to Allah SWT, that even in these desperate times, we are able to appreciate all that we have - and give thanks to the Most High.</p>
+                    <p>As one can imagine, the period of lockdowns and social distancing have been hardest hit on the poorest amongst us. For those living on daily wages or relying on food parcels for their meals, it can get extremely difficult. </p>
+                    <p>As you know, for the past few years, UDES has visited refugee camps in Cameroon to provide the essential aid during Ramadan. Unfortunately, due to the Covid-19 travel restrictions, we wouldn't be personally able to visit these camps, this year. The dire situation has been worsened due to the reduced supply of aid to these refugee camps. However, we are totally committed to the cause and the plight of the refugees there. UDES's committee members and other volunteers are present in ground in Cameroon to provide the necessary support.</p>
+                    <p>Although over the last few years, we have mainly focussed on the larger refugee camp at Borgop, this year we have decided we will provide our support to the smaller camp in Guam. The main reasons for our decision is because we haven't had the opportunity to help them in the past, and also because we are lacking in funds this year and hence it made sense to support a smaller camp, that houses 6000 people. Along with them, we are also hoping to support some unregistered refugees living in the villages of Meiganga, as they do not have access to any aid whatsoever. This will be a joint effort along with the charity Caravan of Mercy, Leicester.</p>
+                    <p>We appeal to you earnestly to help them with the urgently needed food, medicines and other necessities. As usual, once the drive is complete, we will update our website with pictures so that you are able to see the impact that your funds make. May Allah accept all our efforts, this Ramadan and grant us the ability to help those in need. If you need any further information or would like to support us, please do not hesitate to <a href="{{url_for('main_app.contact')}}">contact us</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock content %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}
