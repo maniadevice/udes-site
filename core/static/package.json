@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "bulma": "^0.7.2",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "node-sass": "^4.11.0",
     "unitegallery": "^1.7.28"
   }
