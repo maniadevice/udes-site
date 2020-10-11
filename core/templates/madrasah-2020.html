@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block title %} Water Pump Project 2019 {% endblock title %}
+
+{% block head %}
+{{ super() }}
+{% endblock head %}
+
+{# body begins #}
+{% block content %}
+
+<main>
+    <div style="padding-left: 3rem;">
+        <div class="columns">
+            <div class="column is-12">
+                <div class="content is-medium">
+                    <p class="title is-3 is-spaced">Madrasahs & Water Pump</p>
+                    <p class="title is-6 is-spaced">September 2020</p>
+                    <p>
+                        Alhamdulillah, we are delighted to announce the completion of the following projects in Cameroon.
+                    </p>
+                    <ul>
+                        <li>Primary school in Mbangray</li>
+                        <li>High school in Meinganga</li>
+                        <li>Water pump in Mbangray</li>
+                    </ul>
+                    <p>The primary school in Mbangray completed development in September 2020, will accommodate 700 students - both boys and girls. It will consist of six grades and teach both Islamic studies and academics in Arabic and French. We have also managed to complete the construction of a high school in Meiganga. This school will teach two grades and will accommodate both boys and girls.</p>
+                    <p>Lastly, we also managed to complete the construction of a water pump, providing clean drinking water to the people in the village of Mbangray.</p>
+                    <p>We are grateful to Allah for his grace by which this was possible. We would like to thank the Muslims in the UK by whose support these projects were funded. May the Almighty accept it from you.</p>
+                    <p>Please find some pictures and videos below from the chairman's visit to Cameroon in September 2020.</p>
+
+                    <div id="gallery" style="display:none; margin: 0px auto;">
+
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/madrasah-2020/1.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/madrasah-2020/1.jpg' )}}"
+                        data-description="Primary School - Mbangray, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/madrasah-2020/2.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/madrasah-2020/2.jpg' )}}"
+                        data-description="Primary School - Mbangray, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/madrasah-2020/3.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/madrasah-2020/3.jpg' )}}"
+                        data-description="Primary School - Mbangray, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/madrasah-2020/4.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/madrasah-2020/4.jpg' )}}"
+                        data-description="Primary School - Mbangray, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/madrasah-2020/5.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/madrasah-2020/5.jpg' )}}"
+                        data-description="Water Pump - Mbangray, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/madrasah-2020/6.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/madrasah-2020/6.jpg' )}}"
+                        data-description="Primary School - Mbangray, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/madrasah-2020/7.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/madrasah-2020/7.jpg' )}}"
+                        data-description="Primary School - Mbangray, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/madrasah-2020/8.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/madrasah-2020/8.jpg' )}}"
+                        data-description="Water Pump - Mbangray, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/madrasah-2020/10.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/madrasah-2020/10.jpg' )}}"
+                        data-description="Primary School - Mbangray, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/madrasah-2020/11.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/madrasah-2020/11.jpg' )}}"
+                        data-description="Primary School - Mbangray, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/madrasah-2020/12.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/madrasah-2020/12.jpg' )}}"
+                        data-description="Primary School - Mbangray, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/madrasah-2020/13.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/madrasah-2020/13.jpg' )}}"
+                        data-description="Primary School - Mbangray, Cameroon">
+
+                        <img alt="Primary School - Mbangray" data-type="youtube" data-videoid="D9TmnL5vOyM" data-description="Primary School - Mbangray">
+                        <img alt="Primary School - Mbangray" data-type="youtube" data-videoid="Tm1SL1oYDco" data-description="Primary School - Mbangray">
+                        <img alt="Water Pump - Mbangray" data-type="youtube" data-videoid="CGZEc79L6Ds" data-description="Water Pump - Mbangray">
+                        <img alt="Primary School - Mbangray" data-type="youtube" data-videoid="aLDmkDi_HUs" data-description="Primary School - Mbangray">
+
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/madrasah-2020/14.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/madrasah-2020/14.jpg' )}}"
+                        data-description="High School - Meiganga, Cameroon">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/madrasah-2020/15.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/madrasah-2020/15.jpg' )}}"
+                        data-description="High School - Meiganga, Cameroon">
+
+                        <img alt="High School - Meignanga" data-type="youtube" data-videoid="X0qED3fukds" data-description="High School - Meignanga">
+                        <img alt="High School - Meignanga" data-type="youtube" data-videoid="QDZh_VhYctw" data-description="High School - Meignanga">
+                    </div>
+                    <br />
+                    <p>We are extremely thankful for the supporters and the donors of UDES. This initiative cannot succeed without your support. May Allah reward you abundantly. If you need any further information or would like to support us, please do not hesitate to <a href="{{url_for('main_app.contact')}}">contact us</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script type="text/javascript">
+    // A $( document ).ready() block.
+
+    $(document).ready(function () {
+        $("#gallery").unitegallery({
+            gallery_autoplay: true,
+            gallery_play_interval: 5000,
+            theme_enable_text_panel: true,
+            slider_scale_mode: 'down'
+        });
+    });
+
+</script>
+
+{% endblock content %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}

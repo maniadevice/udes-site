@@ -42,6 +42,10 @@ def water_pump_2019():
 def masjid_2019():
     return render_template('/mosque-2019.html')
 
+@main_app.route('/madrasah-2020')
+def madrasah_2020():
+    return render_template('/madrasah-2020.html')
+
 @main_app.route('/accreditation')
 def accreditation():
     return render_template('accreditation.html')
