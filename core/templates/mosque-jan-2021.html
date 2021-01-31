@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %} Masjid Project 2021 {% endblock title %}
+
+{% block head %}
+{{ super() }}
+{% endblock head %}
+
+{# body begins #}
+{% block content %}
+
+<main>
+    <div style="padding-left: 3rem;">
+        <div class="columns">
+            <div class="column is-12">
+                <div class="content is-medium">
+                    <p class="title is-3 is-spaced">Masjid Construction</p>
+                    <p class="title is-6 is-spaced">January 2021</p>
+                    <p>
+                        Alhamdulillah, we are pleased to announce that the construction of another Masjid in the village of Meiganga has been completed. This project took just three months for completion and will accommodate for 150 people.
+                    </p>
+
+                    <div id="gallery" style="display:none; margin: 0px auto;">
+
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/mosque-2/1.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/mosque-2/1.jpg' )}}"
+                        data-description="New Masjid - Meiganga">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/mosque-2/2.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/mosque-2/2.jpg' )}}"
+                                                data-description="New Masjid - Meiganga">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/mosque-2/3.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/mosque-2/3.jpg' )}}"
+                                                data-description="New Masjid - Meiganga">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/mosque-2/4.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/mosque-2/4.jpg' )}}"
+                                                data-description="New Masjid - Meiganga">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/mosque-2/5.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/mosque-2/5.jpg' )}}"
+                                                data-description="New Masjid - Meiganga">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/mosque-2/6.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/mosque-2/6.jpg' )}}"
+                                                data-description="New Masjid - Meiganga">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/mosque-2/7.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/mosque-2/7.jpg' )}}"
+                                                data-description="New Masjid - Meiganga">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/mosque-2/8.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/mosque-2/8.jpg' )}}"
+                                                data-description="New Masjid - Meiganga">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/mosque-2/9.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/mosque-2/9.jpg' )}}"
+                                                data-description="New Masjid - Meiganga">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/mosque-2/10.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/mosque-2/10.jpg' )}}"
+                                                data-description="New Masjid - Meiganga">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/mosque-2/11.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/mosque-2/11.jpg' )}}"
+                                                data-description="New Masjid - Meiganga">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/mosque-2/12.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/mosque-2/12.jpg' )}}"
+                                                data-description="New Masjid - Meiganga">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/mosque-2/13.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/mosque-2/13.jpg' )}}"
+                                                data-description="New Masjid - Meiganga">
+                        <img alt="" src="{{ url_for( 'static', filename='images/media/mosque-2/14.jpg' )}}" data-image="{{ url_for( 'static', filename='images/media/mosque-2/14.jpg' )}}"
+                                                data-description="New Masjid - Meiganga">
+
+
+                        <img alt="New Masjid Project - Meiganga" data-type="youtube" data-videoid="gTPNSs2q-HA" data-description="New Masjid Project - Meiganga">
+                        <img alt="New Masjid Project - Meiganga" data-type="youtube" data-videoid="X848ZIFX6es" data-description="New Masjid Project - Meiganga">
+                    </div>
+                    <br />
+                    <p>We are extremely thankful for the supporters and the donors of UDES. This initiative cannot succeed without your support. May Allah reward you abundantly. If you need any further information or would like to support us, please do not hesitate to <a href="{{url_for('main_app.contact')}}">contact us</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script type="text/javascript">
+    // A $( document ).ready() block.
+
+    $(document).ready(function () {
+        $("#gallery").unitegallery({
+            gallery_autoplay: true,
+            gallery_play_interval: 5000,
+            theme_enable_text_panel: true,
+            slider_scale_mode: 'down'
+        });
+    });
+
+</script>
+
+{% endblock content %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}
